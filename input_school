@@ -1,0 +1,27 @@
+//Header Section
+#include<stdio.h>
+#include<conio.h>
+//Function called main.
+main() {
+	float decimal;
+	int age;
+	char name[32],grade[2];
+	printf("\n\n\n\n\n\n\tInsert your name here: ");
+	scanf("%s",&name);
+		printf("\tInsert your age here: ");
+		scanf("%d",&age);
+			printf("\tInsert your desired decimal here: ");
+			scanf("%f",&decimal);
+				printf("\tInsert your grade here: ");
+				scanf("%s",&grade);
+
+	printf("\n\n\tYour name: %s\n",name);
+	printf("\tYour age: %d\n",age);
+	printf("\tYour chosen decimal: %.2f\n",decimal);
+	printf("\tYour grade: %s\n\n",grade);
+	printf("\tYou may now press anything to close.");
+	
+
+
+	getch();
+}
