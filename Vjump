@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int y,a;
+	char name[10],grade[2];
+	float x,b;
+	printf("\tBeware insert Wrong thing it may error\n");
+	printf("\tInsert your Age :");
+	scanf("%d",&y);
+		printf("\tInsert your favorite decimal:");
+		scanf("%f",&x);
+			printf("\tInsert your dont like decimal:");
+			scanf("%f",&b);
+				printf("\tInsert your name:");
+				scanf("%s",&name);
+					printf("\tInsert your grade <Use Alphabet> :");
+					scanf("%s",&grade);
+	
+					
+	printf("\tYour Age :%d\n",y);
+	printf("\tYour favorite decimal :%.2f\n",x);
+	printf("\tYour dont like decimal :%.2f\n",b);
+	printf("\tYour name :%s\n",name);
+	printf("\tYour grade:%s\n",grade);
+getch();
+}
