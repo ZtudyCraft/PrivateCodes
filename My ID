@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int id,number,tel;
+	char name[30],grade[5],nickname[10],surname[30],email[50];
+	float b;
+
+	printf("\tPlease insert your information to get a complete form\n");
+	printf("\tBeware insert Wrong thing it may error\n");
+	printf("\tDo not use space bar\n");
+		printf("\tInsert your Name :");
+		scanf("%s",&name);
+			printf("\tInsert your Surname :");
+			scanf("%s",surname);
+				printf("\tInsert your nickname :");
+				scanf("%s",&nickname);
+					printf("\tinsert your id :");
+					scanf("%d",&id);
+						printf("\tinsert your number :");
+						scanf("%d",&number);
+							printf("\tinsert your email :");
+							scanf("%s",&email);
+								printf("\tinsert your Telnumber :");
+								scanf("%d",&tel);
+									printf("\tinsert your grade :");
+									scanf("%f",&b);
+	
+									
+								
+	printf("Your Name :%s\n",name);
+	printf("Your Surname:%s\n",surname);
+	printf("Your nickname:%s\n",nickname);
+	printf("Your id :%d\n",id);
+	printf("Your number :%d\n",number);
+	printf("Your grade:%.2f\n",b);
+	printf("Your Email:%s\n",email);
+	printf("Your Tel:%d\n",tel);
+
+										
+	getch();
+}
