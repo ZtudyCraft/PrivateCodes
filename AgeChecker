@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Age2_21734
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int currentyear = DateTime.Now.Year + 543;
+            String prefix = "\t\t[Age Checker] ";
+            Console.WriteLine("\n\n\n\n\n\n\n\n");
+            Console.Write(prefix + "Please input the year: ");
+            int year = Convert.ToInt32(Console.ReadLine());
+            if (year == currentyear - 20)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine(prefix + "Correct!"); Console.WriteLine(prefix + "This is your age: {0}", currentyear - year);
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(prefix + "Incorrect!"); Console.WriteLine(prefix + "This is your age: {0}", currentyear - year);
+            }
+            Console.ReadLine();
+
+        }
+    }
+}
