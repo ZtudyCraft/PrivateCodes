@@ -1,0 +1,54 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Calculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a;
+            int b;
+            string x;
+            Console.WriteLine("\n\n\n\n");
+            Console.WriteLine("\t\t\t Welcome to Calculator Program\n\t\t\twarning it cannot calculate decimal");
+            Console.WriteLine("********************************************************************************");
+            Console.Write("\t\t\t  Input your first  number = ");
+            a = int.Parse(Console.ReadLine());
+            Console.Write("\t\t\t  Input +,-,*,/ to calculate = ");
+            x = Console.ReadLine();
+            Console.Write("\t\t\t  Input your second number = ");
+            b = int.Parse(Console.ReadLine());
+
+            if (x == "+")
+            {
+                Console.WriteLine("\t\t\t       Your answer is = {0}", a + b);
+                Console.ReadLine();
+            }
+            if (x == "-")
+            {
+                Console.WriteLine("\t\t\t       Your answer is = {0}", a - b);
+                Console.ReadLine();
+            }
+            if (x == "*")
+            {
+                Console.WriteLine("\t\t\t       Your answer is = {0}", a * b);
+                Console.ReadLine();
+            }
+            if (x == "/")
+            {
+                Console.WriteLine("\t\t\t       Your answer is = {0}", a / b);
+                Console.ReadLine();
+            }
+            if (x == "")
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("\t\t\t  You didn't calculate anything");
+                Console.ReadLine();
+            }
+        }
+    }
+}
